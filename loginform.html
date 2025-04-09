@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login Form</title>
+  <style>
+    .div{
+      border:3px solid black;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.655);
+      padding:20px;
+      width:300px;
+      
+      }
+      body{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin-top:170px;
+        background-image: url('https://media.tenor.com/spyhJRVI474AAAAi/musical-notes-joypixels.gif');
+        
+      }
+      input[type="button"]:hover {
+      background-color: rgba(0, 0, 255, 0.39);
+    }
+    input[type="button"]{
+      background-color: rgba(0, 68, 255, 0.404);
+      color:aliceblue;
+      border-radius:5px;
+      display:inline;
+    }
+    input[type="text"],input[type="password"]{
+      border-radius: 7px;
+      width: 80%;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="div">
+    <form>
+    <h2>Registration Form</h2>
+    <label><strong>Name:</strong></label><br>
+    <input type="text" name="name" placeholder="Enter Your Name"><br><br>
+    <label><strong>Password:</strong></label><br>
+    <input type="password" name="password" placeholder="Enter Your Password"><br><br>
+    <input type="radio" name="person" value="user" >
+    <label>user</label><br>
+    <input type="radio" name="person" value="artist" >
+    <label>artist</label><br><br>
+    <div class="but">
+    <input type="button" value="Login">
+    <input type="button" value="Register" onclick="window.location.href='signupform.html'">
+    </div>
+
+  </form>
+  </div>
+</body>
+</html>
